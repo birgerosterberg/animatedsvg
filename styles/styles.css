@@ -1,0 +1,17 @@
+body {
+    background-color: #4bb1df;
+    text-align: center;
+}
+header h1, h2 {
+    display: inline-block;
+    font-family: blacktail;
+}
+header h1 {
+    color: #ffb400;
+    font-size: 72px;
+}
+header h2 {
+    color: #d44343;
+    font-size: xx-large;
+}
+
