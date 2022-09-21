@@ -6,7 +6,7 @@ One in a HTML Document
 One in a SVG File
 
 Create 
-One CSS Transition 
-One keyframe Animation
-One external keyframe Animation
+One CSS Transition X
+One keyframe Animation X
+One external keyframe Animation X
 

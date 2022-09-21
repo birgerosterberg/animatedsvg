@@ -1,17 +1,171 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: #4bb1df;
     text-align: center;
 }
-header h1, h2 {
-    display: inline-block;
+/* Header area style! */
+header h1, h2, .navbar ul {
     font-family: blacktail;
+    margin: 20px;
 }
 header h1 {
+    display: block;
     color: #ffb400;
-    font-size: 72px;
+    font-size: 92px;
+}
+header h1:hover {
+    color: #d44343;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 header h2 {
-    color: #d44343;
-    font-size: xx-large;
+    color: 	#ffb400;
+    width: 660px;
+    line-height: 5px;
+    border: solid;
+    border-width: 25px;
+    border-radius: 50px;
+    border-color: #d44343;
+    font-size: 38px;
+    text-decoration:wavy;
+    animation-name: rainbow;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes roll__a__clown__fwd {
+    0%   {transform: translateX(0px) rotate(0deg);}
+    15%  {transform: translateX(100px)rotate(30deg);}
+    30%  {transform: translateX(200px)rotate(80deg);}
+    45%  {transform: translateX(300px)rotate(120deg);}
+    60%  {transform: translateX(400px)rotate(180deg);}
+    75% {transform: translateX(500px)rotate(220deg);}
+    100% {transform: translateX(600px)rotate(360deg);}
+}
+@keyframes roll__a__clown__bck {
+    0%   {transform: translateX(-0px) rotate(0deg);}
+    15%  {transform: translateX(-100px)rotate(-30deg);}
+    30%  {transform: translateX(-200px)rotate(-80deg);}
+    45%  {transform: translateX(-300px)rotate(-120deg);}
+    60%  {transform: translateX(-400px)rotate(-180deg);}
+    75% {transform: translateX(-500px)rotate(-220deg);}
+    100% {transform: translateX(-600px)rotate(-360deg);}
+}
+@keyframes rainbow {
+    0%   {background-color: #d44343;}
+    25%  {background-color: #ffb400;}
+    50%  {background-color: #9068d4;}
+    75%  {background-color: #4bb1df;}
+    100% {background-color: #9ed450;}
+}
+.headache {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    justify-content: space-between;
+    max-width: 100vw;
+    width: 100%;
+    height: 80px;
+    background-color:#4bb1df;
+}
+.navbar img {
+    width: 80px;
+    height: 80px;
+}
+.clown__img1 {
+    animation-name: roll__a__clown__fwd;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-play-state: inherit;
+    animation-play-state: paused;
+}
+.clown__img2 {
+    animation-name: roll__a__clown__bck;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-play-state: paused;
+}
+.clown__img1:hover, .clown__img2:hover {
+    animation-play-state: running;
 }
 
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+.navbar li {
+    list-style: none;
+}
+.navbar a {
+    color: #ffb400;
+    background-color: #d44343;
+    border: solid;
+    border-radius: 50px;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 20px;
+    padding: 9px;    
+}
+.navbar a:hover{
+    background-image: url(../images/gif__baloon.gif);
+    color: #d44343;
+    text-shadow: #000 2px 2px 4px;
+    box-shadow: #000 2px 2px 4px;
+}
+.separated__rainbow__row {
+    display: flex;
+    position: fixed;
+    top: 80px;
+    height: 8px;
+    width: 100vw;
+    animation-name: rainbow;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+  /* Main area style */
+.box__container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.box {
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    background-color: #ffb400;
+    width: 400px;
+    height: 400px;
+}
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    height: 15px;
+    width: 100vw;
+    animation-name: rainbow;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
