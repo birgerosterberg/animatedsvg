@@ -110,7 +110,6 @@ header h2 {
 .clown__img1:active, .clown__img2:active {
     animation-play-state: paused;
 }
-
 .navbar ul {
     display: flex;
     justify-content: space-around;
@@ -149,7 +148,6 @@ header h2 {
     animation-direction: alternate;
 }
   /* Main / Sections style */
-
 .box__container {
     display: flex;
     justify-content: center;
@@ -188,7 +186,13 @@ main .box:nth-child(3) {
     text-transform: capitalize;
     font-size: 30px;
 }
+section .box:nth-child(2){
+    background-color: #d44343;
+}
+section .box:nth-child(3){
+    background-color: #d44343;
 
+}
 /* SVG Circus Elemental design value hangout! */
 .eyes {
     animation: moveCircle 1250ms ease-in-out both infinite;
@@ -201,7 +205,7 @@ main .box:nth-child(3) {
   }
 .flashy {
     animation-name: rainbow;
-    animation-duration: 3s;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -214,9 +218,7 @@ main .box:nth-child(3) {
     animation-fill-mode: both;
     animation-direction: alternate;
     animation-play-state: inherit;
-
 }
-
 footer {
     display: flex;
     position: fixed;
